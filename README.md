@@ -15,7 +15,7 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 ## Terminal
 - shell: bash
 - emulator: [alacritty](https://alacritty.org/)
-- prompt: [starship](https://starship.rsgit clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git)
+- prompt: [starship](https://starship.rs)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
 - monitor: [bottom](https://github.com/ClementTsang/bottom)
 - fun
@@ -27,8 +27,8 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 - ide: [lunarvim](https://www.lunarvim.org/)
 
 ## Media
-- (mopidy)[https://mopidy.com/] - used with (mopidy-jellyfin)[https://github.com/jellyfin/mopidy-jellyfin] for my Jellyfin server
-- (ncmcpp)[https://rybczak.net/ncmpcpp/] - for controlling mopidy
+- [mopidy](https://mopidy.com/) - used with (mopidy-jellyfin)[https://github.com/jellyfin/mopidy-jellyfin] for my Jellyfin server
+- [ncmcpp](https://rybczak.net/ncmpcpp/) - for controlling mopidy
 
 ## Misc
 - [redshift](http://jonls.dk/redshift/) - Saves my eyes at night
