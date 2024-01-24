@@ -30,47 +30,7 @@ config.warn_about_missing_glyphs=false
 -- config.color_scheme = 'Catppuccin Mocha'
 config.color_scheme = "Gigavolt (base16)"
 
-config.font = wezterm.font "JetBrainsMono Nerd Font"
-
--- config.font = wezterm.font({
---   family='MonaspiceNe Nerd Font',
---   weight='Regular',
---   harfbuzz_features={ 'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08' },
--- })
-
--- config.font_rules = {
---   { -- Italic
---     intensity = 'Normal',
---     italic = true,
---     font = wezterm.font({
---       -- family="MonaspiceRa Nerd Font",  -- script style
---       family='MonaspiceXe Nerd Font', -- courier-like
---       style = 'Italic',
---     })
---   },
-
---   { -- Bold
---     intensity = 'Bold',
---     italic = false,
---     font = wezterm.font( {
---       family='MonaspiceKr Nerd Font',
---       family='MonaspiceKr Nerd Font',
---       -- weight='ExtraBold',
---       weight='Bold',
---       })
---   },
-
---   { -- Bold Italic
---     intensity = 'Bold',
---     italic = true,
---     font = wezterm.font( {
---       family='MonaspiceXe Nerd Font',
---       style='Italic',
---       weight='Bold',
---       }
---     )
---   },
--- }
+config.font = wezterm.font 'JetBrains Mono'
 
 -- and finally, return the configuration to wezterm
 return config
