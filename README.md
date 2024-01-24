@@ -28,7 +28,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - ide: [lunarvim](https://www.lunarvim.org/)
 
 ### 🌌 media
-- [mopidy](https://mopidy.com/) - used with (mopidy-jellyfin)[https://github.com/jellyfin/mopidy-jellyfin] for my jellyfin server
+- [mopidy](https://mopidy.com/) - used with [mopidy-jellyfin](https://github.com/jellyfin/mopidy-jellyfin) for my jellyfin server
 - [ncmcpp](https://rybczak.net/ncmpcpp/) - for controlling mopidy
 
 ### 🪐 misc
