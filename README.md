@@ -5,6 +5,7 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 ## System
 - distro: [Arch Linux](https://archlinux.org)
 - wm: [bspwm](https://github.com/baskerville/bspwm) ([cheat sheet](https://gist.github.com/amit08255/43ed6efdc1952d88f9a61e86f375e924))
+- dm: [ly](https://github.com/fairyglade/ly)
 - aur helper: [paru](https://github.com/Morganamilo/paru)
 - file manager: [lf](https://github.com/gokcehan/lf)
 - launcher: [rofi](https://github.com/davatorium/rofi)
