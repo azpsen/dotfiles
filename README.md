@@ -11,6 +11,7 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 - launcher: [rofi](https://github.com/davatorium/rofi)
 - bar: [lemonbar](https://github.com/LemonBoy/bar)
 - fonts: [JetBrains Mono Nerd Font](https://github.com/JetBrains/JetBrainsMono)
+- color scheme: [pywal](https://github.com/dylanaraps/pywal)
 
 ## Terminal
 - shell: bash
