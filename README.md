@@ -12,6 +12,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - file manager: [nnn](https://github.com/jarun/nnn), [vifm](https://github.com/vifm/vifm), or [lf](https://github.com/gokcehan/lf)
 - launcher: [rofi](https://github.com/davatorium/rofi)
 - bar: [lemonbar](https://github.com/LemonBoy/bar)
+- notifications: [dunst](https://github.com/dunst-project/dunst)
 - fonts: [JetBrains Mono Nerd Font](https://github.com/JetBrains/JetBrainsMono)
 - color scheme: [pywal](https://github.com/dylanaraps/pywal)
 
