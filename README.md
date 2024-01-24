@@ -21,7 +21,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - prompt: [starship](https://starship.rs)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
 - monitor: [bottom](https://github.com/ClementTsang/bottom)
-- fun
+- [glow](https://github.com/charmbracelet/glow) - markdown preview
 
 ### 🚀 development
 - ide: [lunarvim](https://www.lunarvim.org/)
@@ -34,6 +34,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - [redshift](http://jonls.dk/redshift/) - saves my eyes at night
 - [taskline](https://github.com/perryrh0dan/taskline) - todo list
 - [kabmat](https://github.com/PlankCipher/kabmat) - kanban boards
+- [alternatives](https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md) - not a program, but a list of better programs
 
 ### 🎉 fun
 - [cava](https://github.com/karlstav/cava) - music visualizer
