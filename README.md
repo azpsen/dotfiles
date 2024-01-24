@@ -35,3 +35,4 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 ### 🪐 Misc
 - [redshift](http://jonls.dk/redshift/) - saves my eyes at night
 - [taskline](https://github.com/perryrh0dan/taskline) - todo list
+- [kabmat](https://github.com/PlankCipher/kabmat) - kanban boards
