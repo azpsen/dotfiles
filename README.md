@@ -21,7 +21,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - emulator: [wezterm](https://wezfurlong.org/wezterm/index.html)
 - prompt: [starship](https://starship.rs)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
-- monitor: [bottom](https://github.com/ClementTsang/bottom)
+- monitor: [bottom](https://github.com/ClementTsang/bottom) and/or [btop](https://github.com/aristocratos/btop)
 - [glow](https://github.com/charmbracelet/glow) - markdown preview
 
 ### 🚀 development
