@@ -1,6 +1,6 @@
 # Dotfiles
 
-Here are the dotfiles for my bspwm setup. WIP
+Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 
 ## System
 - distro: [Arch Linux](https://archlinux.org)
@@ -17,13 +17,17 @@ Here are the dotfiles for my bspwm setup. WIP
 - prompt: [starship](https://starship.rsgit clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
 - monitor: [bottom](https://github.com/ClementTsang/bottom)
-- Fun
+- fun
     - [cava](https://github.com/karlstav/cava) - Terminal music visualizer
     - [pipes.sh](https://github.com/pipeseroni/pipes.sh) - Terminal pipes screensaver
     - [cmatrix](https://github.com/abishekvashok/cmatrix) - Terminal matrix-like screensaver
 
 ## Development
 - ide: [lunarvim](https://www.lunarvim.org/)
+
+## Media
+- (mopidy)[https://mopidy.com/] - used with (mopidy-jellyfin)[https://github.com/jellyfin/mopidy-jellyfin] for my Jellyfin server
+- (ncmcpp)[https://rybczak.net/ncmpcpp/] - for controlling mopidy
 
 ## Misc
 - [redshift](http://jonls.dk/redshift/) - Saves my eyes at night
