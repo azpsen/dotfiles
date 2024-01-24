@@ -14,7 +14,7 @@ Here are the dotfiles and some of the programs I use for my bspwm setup. WIP
 
 ## Terminal
 - shell: bash
-- emulator: [alacritty](https://alacritty.org/)
+- emulator: [wezterm](https://wezfurlong.org/wezterm/index.html)
 - prompt: [starship](https://starship.rs)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
 - monitor: [bottom](https://github.com/ClementTsang/bottom)
