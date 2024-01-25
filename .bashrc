@@ -25,9 +25,6 @@ export EDITOR="$VISUAL"
 # startup #
 # ------- #
 
-# restore color scheme
-(cat ~/.cache/wal/sequences &)
-
 # display system info on startup 
 pfetch
 
