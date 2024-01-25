@@ -14,6 +14,8 @@ alias grep='grep --color=auto'
 
 alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
 
+alias nv='nvim'
+
 # --- #
 # env #
 # --- #
@@ -24,6 +26,9 @@ export EDITOR="$VISUAL"
 # ------- #
 # startup #
 # ------- #
+
+# restore color scheme
+(cat ~/.cache/wal/sequences &)
 
 # display system info on startup 
 pfetch

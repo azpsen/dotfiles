@@ -10,6 +10,7 @@ xsetroot -cursor_name left_ptr
 pywal -n -R
 
 # set wallpaper
-xwallpaper --zoom ~/wallpapers/jellyfish.jpg
+xwallpaper --zoom ~/wallpapers/autumn-river.png
 
+# start window manager
 exec bspwm
