@@ -8,6 +8,8 @@ $git_status\
 $python\
 $character"""
 
+add_newline = false
+
 [username]
 format = "[$user]($style) "
 

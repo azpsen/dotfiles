@@ -125,10 +125,10 @@ super + {Left,Down,Up,Right}
 #
 
 super + space
-	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.mopidy /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+	playerctl --player=Feishin play-pause
 
 super + comma
-	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.mopidy /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+	playerctl --player=Feishin next
 
 super + period
-	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.mopidy /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+	playerctl --player=Feishin previous
