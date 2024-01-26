@@ -4,7 +4,7 @@
 xsetroot -cursor_name left_ptr
 
 # set wallpaper
-xwallpaper --zoom ~/wallpapers/everforest/mist_forest_1.png
+xwallpaper --zoom ~/wallpapers/everforest/flowers.png
 
 # start window manager
 exec bspwm
