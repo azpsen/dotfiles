@@ -7,7 +7,7 @@ exec /home/april/.screenlayout/samsung_aoc.sh
 xsetroot -cursor_name left_ptr
 
 # restore color scheme
-pywal -n -R
+# pywal -n -R
 
 # set wallpaper
 xwallpaper --zoom ~/wallpapers/autumn-river.png

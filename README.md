@@ -14,7 +14,13 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - bar: [lemonbar](https://github.com/LemonBoy/bar)
 - notifications: [dunst](https://github.com/dunst-project/dunst)
 - fonts: [jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
-- color scheme: [pywal](https://github.com/dylanaraps/pywal)
+- color scheme: [everforest](https://github.com/dylanaraps/pywal)
+  - [gtk](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme)
+  - [icons](https://www.pling.com/p/1695476/)
+  - [rofi](https://github.com/newmanls/rofi-themes-collection)
+  - [neovim](https://github.com/neanias/everforest-nvim)
+  - [firefox](https://addons.mozilla.org/en-US/firefox/addon/everforest_theme/)
+  - [duckduckgo](https://github.com/temefleet/everforest-theme-duckduckgo)
 
 ### ⌨️  terminal
 - shell: bash

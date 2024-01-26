@@ -11,10 +11,14 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ll='ls -l --color=auto'
 
 alias ncmpcpp='ncmpcpp -b ~/.config/ncmpcpp/bindings'
 
 alias nv='nvim'
+alias lv='lvim'
+
+alias lg='lazygit'
 
 # --- #
 # env #
@@ -28,7 +32,7 @@ export EDITOR="$VISUAL"
 # ------- #
 
 # restore color scheme
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # display system info on startup 
 pfetch
