@@ -9,7 +9,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - dm: [ly](https://github.com/fairyglade/ly)
 - compositor: [picom](https://github.com/yshui/picom)
 - aur helper: [paru](https://github.com/Morganamilo/paru)
-- file manager: [nnn](https://github.com/jarun/nnn), [vifm](https://github.com/vifm/vifm), or [lf](https://github.com/gokcehan/lf)
+- file manager: [nnn](https://github.com/jarun/nnn)
 - launcher: [rofi](https://github.com/davatorium/rofi)
 - bar: [lemonbar](https://github.com/LemonBoy/bar)
 - notifications: [dunst](https://github.com/dunst-project/dunst)

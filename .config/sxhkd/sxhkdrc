@@ -127,8 +127,8 @@ super + {Left,Down,Up,Right}
 super + space
 	playerctl --player=Feishin play-pause
 
-super + comma
+super + period
 	playerctl --player=Feishin next
 
-super + period
+super + comma
 	playerctl --player=Feishin previous
