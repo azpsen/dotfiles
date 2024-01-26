@@ -5,17 +5,23 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
 $python\
 $character"""
 
+[username]
+format = "[$user]($style) "
+
+[hostname]
+format = "@ [$hostname]($style) "
+
 [directory]
+read_only = ' '
 style = "blue"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[](purple)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](green)"
 
 [git_branch]
 format = "[$branch]($style)"
