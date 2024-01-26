@@ -36,7 +36,9 @@ modified = "​"
 staged = "​"
 renamed = "​"
 deleted = "​"
-stashed = "≡"
+stashed = "≡ "
+ahead = "⇡ "
+behind = "⇣ "
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
