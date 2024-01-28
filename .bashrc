@@ -34,7 +34,7 @@ export EDITOR="$VISUAL"
 
 # nnn
 export NNN_TRASH=1
-export NNN_OPTS="H" # 'H' shows the hidden files. Same as option -H (so 'nnn -deH')
+export NNN_OPTS="" # 'H' shows the hidden files. Same as option -H (so 'nnn -deH')
 # export NNN_OPTS="deH" # if you prefer to have all the options at the same place
 export LC_COLLATE="C" # hidden files on top
 export NNN_FIFO="/tmp/nnn.fifo" # temporary buffer for the previews

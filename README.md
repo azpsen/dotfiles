@@ -11,11 +11,12 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - aur helper: [paru](https://github.com/Morganamilo/paru)
 - file manager: [nnn](https://github.com/jarun/nnn)
 - launcher: [rofi](https://github.com/davatorium/rofi)
-- bar: [lemonbar](https://github.com/LemonBoy/bar)
+- bar: [polybar](https://github.com/polybar/polybar)
 - notifications: [dunst](https://github.com/dunst-project/dunst)
 - fonts: [jetbrains mono](https://github.com/JetBrains/JetBrainsMono)
+- theme: [everforest](https://github.com/sainnhe/everforest)
   - [gtk](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme)
-  - [icons](https://www.pling.com/p/1695476/)
+  - [icons](https://github.com/yeyushengfan258/Reversal-icon-theme)
   - [rofi](https://github.com/newmanls/rofi-themes-collection)
   - [neovim](https://github.com/neanias/everforest-nvim)
   - [firefox](https://addons.mozilla.org/en-US/firefox/addon/everforest-dark-official/)
@@ -41,6 +42,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - [taskline](https://github.com/perryrh0dan/taskline) - todo list
 - [kabmat](https://github.com/PlankCipher/kabmat) - kanban boards
 - [alternatives](https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md) - not a program, but a list of better programs
+- [maim](https://github.com/naelstrof/maim) - screenshots
 
 ### 🎉 fun
 - [cava](https://github.com/karlstav/cava) - music visualizer

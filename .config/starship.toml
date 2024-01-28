@@ -5,10 +5,14 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$line_break\
 $python\
 $character"""
 
 add_newline = false
+
+#[line_break]
+#disabled = true
 
 [username]
 format = "[$user]($style) "
