@@ -17,8 +17,10 @@ bspc rule -a Nvidia-settings state=floating
 bspc rule -a openrgb state=floating
 bspc rule -a Sxiv state=floating
 
-dunst &
+pgrep -x dunst > /dev/null || dunst &
 
-~/.config/bspwm/scripts/notify.sh &
+pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
-picom &
+~/.config/bspwm/scripts/launch-polybar.sh &
+
+pgrep -x picom > /dev/null || picom &

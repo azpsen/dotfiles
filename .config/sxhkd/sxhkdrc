@@ -14,6 +14,9 @@ super + d
 super + v
 	~/.config/rofi/scripts/vim-cheat.sh
 
+# power menu
+super + p
+	rofi -show p -modi p:'~/.config/rofi/scripts/rofi-power-menu --symbols-font "JetBrainsMonoNL Nerd Font Mono"' -font "JetBrainsMonoNL Nerd Font Mono" -monitor -1
 # print screen
 Print
 	path="$HOME/pictures/screenshots/$(date +"%s - %Y-%m-%d")" && maim "$path" && xclip -selection clipboard -t image/png "$path"

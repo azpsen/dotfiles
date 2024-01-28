@@ -10,12 +10,12 @@ while true; do
         continue
     fi
     
-    current_track=$(playerctl -p Feishin metadata --format '{{ title }}\n{{ artist }}\n{{ album }}')
+    current_track=$(playerctl -p Feishin metadata --format '<i>{{ title }}</i>\n{{ artist }}\n{{ album }}')
     album_art_url=$(playerctl -p Feishin metadata mpris:artUrl)
     album_art_file="/tmp/album_art.jpg"
     wget -q -O $album_art_file $album_art_url
     if [[ "$current_track" != "$previous_track" ]]; then
-        notify-send "Now Playing" "$current_track" -i $album_art_file
+        notify-send "now playing" "$current_track" -i $album_art_file
         previous_track="$current_track"
     fi
     sleep 1
