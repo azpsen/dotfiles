@@ -29,6 +29,8 @@ alias pf='pfetch'
 # env #
 # --- #
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 export HISTFILE=~/.history
 export HISTSIZE=5000
 
