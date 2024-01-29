@@ -18,6 +18,10 @@ super + v
 super + n
 	~/.config/rofi/scripts/icon-picker.sh
 
+# clipboard manager
+super + c
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
 # power menu
 super + p
 	rofi -show p -modi p:'~/.config/rofi/scripts/rofi-power-menu --symbols-font "JetBrainsMonoNL Nerd Font Mono"' -font "JetBrainsMonoNL Nerd Font Mono" -monitor -1

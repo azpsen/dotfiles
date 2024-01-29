@@ -19,6 +19,7 @@ bspc rule -a Lxappearance state=floating
 bspc rule -a Nvidia-settings state=floating
 bspc rule -a openrgb state=floating
 bspc rule -a Sxiv state=floating
+bspc rule -a Dconf-editor state=floating
 
 # start screen locker
 xset s 600 5
@@ -29,5 +30,7 @@ pgrep -x dunst > /dev/null || dunst &
 pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
 ~/.config/bspwm/scripts/launch-polybar.sh &
+
+pgrep -x greenclip > /dev/null || greenclip daemon &
 
 pgrep -x picom > /dev/null || picom &
