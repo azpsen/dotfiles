@@ -6,7 +6,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 ### 🏗️ system
 - distro: [arch linux](https://archlinux.org)
 - wm: [bspwm](https://github.com/baskerville/bspwm) ([cheat sheet](https://gist.github.com/amit08255/43ed6efdc1952d88f9a61e86f375e924))
-- dm: [ly](https://github.com/fairyglade/ly)
+- dm: [lightdm](https://github.com/canonical/lightdm) with [mini-greeter](https://github.com/prikhi/lightdm-mini-greeter)
 - compositor: [picom](https://github.com/yshui/picom)
 - aur helper: [paru](https://github.com/Morganamilo/paru)
 - file manager: [nnn](https://github.com/jarun/nnn)
