@@ -29,6 +29,9 @@ alias pf='pfetch'
 # env #
 # --- #
 
+export HISTFILE=~/.history
+export HISTSIZE=5000
+
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
