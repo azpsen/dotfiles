@@ -33,4 +33,4 @@ pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
 pgrep -x greenclip > /dev/null || greenclip daemon &
 
-pgrep -x picom > /dev/null || picom &
+pgrep -x picom > /dev/null || picom --no-fading-openclose &
