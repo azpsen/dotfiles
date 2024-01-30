@@ -9,7 +9,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - dm: [lightdm](https://github.com/canonical/lightdm) with [mini-greeter](https://github.com/prikhi/lightdm-mini-greeter)
 - compositor: [picom](https://github.com/yshui/picom)
 - aur helper: [paru](https://github.com/Morganamilo/paru)
-- file manager: [nnn](https://github.com/jarun/nnn)
+- file manager: [nnn](https://github.com/jarun/nnn) and [thunar](https://wiki.archlinux.org/title/Thunar)
 - launcher: [rofi](https://github.com/davatorium/rofi)
 - bar: [polybar](https://github.com/polybar/polybar)
 - notifications: [dunst](https://github.com/dunst-project/dunst)
@@ -43,6 +43,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - [kabmat](https://github.com/PlankCipher/kabmat) - kanban boards
 - [alternatives](https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md) - not a program, but a list of better programs
 - [maim](https://github.com/naelstrof/maim) - screenshots
+- [dua](https://github.com/Byron/dua-cli) - disk usage analyzer
 
 ### 🎉 fun
 - [cava](https://github.com/karlstav/cava) - music visualizer

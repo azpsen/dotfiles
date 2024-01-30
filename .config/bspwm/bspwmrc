@@ -20,6 +20,7 @@ bspc rule -a Nvidia-settings state=floating
 bspc rule -a openrgb state=floating
 bspc rule -a Sxiv state=floating
 bspc rule -a Dconf-editor state=floating
+bspc rule -a Thunar state=floating
 
 # start screen locker
 xset s 600 5
