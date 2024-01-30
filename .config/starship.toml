@@ -23,6 +23,7 @@ format = "@ [$hostname]($style) "
 [directory]
 read_only = ' '
 style = "blue"
+truncate_to_repo = false
 
 [character]
 success_symbol = "[](purple)"
