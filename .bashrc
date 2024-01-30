@@ -29,6 +29,8 @@ alias pf='pfetch'
 # env #
 # --- #
 
+export PATH=/home/april/.local/bin:$PATH
+
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export HISTFILE=~/.history
