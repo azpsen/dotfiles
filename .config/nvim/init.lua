@@ -37,6 +37,10 @@ vim.opt.tabstop = 2
 -- disable compatibility mode
 vim.cmd("set nocompatible")
 
+-- set leader key to <space> and disable other <space> bindings
+vim.g.mapleader = " "
+vim.keymap.set('n', '<SPACE>', '<Nop>')
+
 -- initialize lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -64,6 +68,18 @@ require("lazy").setup({
 
   -- rainbow delimiters for treesitter
   "hiphish/rainbow-delimiters.nvim",
+
+  -- fast comment/uncomment
+  {
+    "numToStr/Comment.nvim",
+    opts = {
+      toggler = {
+        line = "<Leader>\\",
+        block = "<Leader>|"
+      }
+    },
+    lazy = false,
+  },
 
   -- sidebar file tree
   {
@@ -117,10 +133,6 @@ require("lazy").setup({
 vim.opt.termguicolors = true
 vim.cmd([[colorscheme everforest]])
 vim.opt.background = "dark"
-
--- set leader key to <space> and disable other <space> bindings
-vim.g.mapleader = " "
-vim.keymap.set('n', '<SPACE>', '<Nop>')
 
 -- open sidebar file tree with <space> e
 vim.keymap.set('n', '<Leader>e', '<cmd>NvimTreeToggle<cr>')
