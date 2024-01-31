@@ -22,6 +22,7 @@ bspc rule -a Sxiv state=floating
 bspc rule -a Dconf-editor state=floating
 bspc rule -a Thunar state=floating
 bspc rule -a Xarchiver state=floating
+bspc rule -a L3afpad state=floating
 
 # start screen locker
 xset s 600 5

@@ -28,10 +28,10 @@ super + p
 
 # print screen
 Print
-	path="$HOME/pictures/screenshots/$(date +"%s - %Y-%m-%d").png" && maim "$path" && xclip -selection clipboard -t image/png "$path"
+	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim "$path" && xclip -selection clipboard -t image/png "$path"
 
 shift + Print
-	path="$HOME/pictures/screenshots/$(date +"%s - %Y-%m-%d").png" && maim -s "$path" && xclip -selection clipboard -t image/png "$path"
+	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim -s "$path" && xclip -selection clipboard -t image/png "$path"
 
 # make sxhkd reload its configuration files:
 super + Escape
