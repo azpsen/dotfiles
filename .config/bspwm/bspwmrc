@@ -21,6 +21,7 @@ bspc rule -a openrgb state=floating
 bspc rule -a Sxiv state=floating
 bspc rule -a Dconf-editor state=floating
 bspc rule -a Thunar state=floating
+bspc rule -a Xarchiver state=floating
 
 # start screen locker
 xset s 600 5
@@ -34,4 +35,5 @@ pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
 pgrep -x greenclip > /dev/null || greenclip daemon &
 
-pkill picom && picom --no-fading-openclose &
+killall picom
+picom --no-fading-openclose &
