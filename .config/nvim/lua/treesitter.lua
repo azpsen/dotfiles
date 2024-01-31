@@ -7,11 +7,22 @@ end
 -- configure treesitter
 treesitter.setup({
   -- enable syntax highlighting
-  highlight = {
-    enable = true,
-  },
+  highlight = { enable = true },
+
   -- enable indentation
   indent = { enable = true },
+
+  -- enable incremental selection (<C-space>)
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "<C-space>",
+      node_incremental = "<C-space>",
+      scope_incremental = false,
+      node_decremental = "<bs>",
+    },
+  },
+
   -- ensure these language parsers are installed
   ensure_installed = {
     "json",
@@ -33,6 +44,7 @@ treesitter.setup({
     "regex",
     "sxhkdrc",
     "udev",
+    "requirements",
   },
   -- auto install above language parsers
   auto_install = true,

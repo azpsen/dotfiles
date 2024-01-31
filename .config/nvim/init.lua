@@ -1,3 +1,7 @@
+--------------------------------------------------
+--                BASIC  OPTIONS                --
+--------------------------------------------------
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -13,8 +17,8 @@ vim.opt.completeopt = noinsert,menuone,noselect
 -- enable line under/around cursor
 vim.opt.cursorline = true
 
--- don't require writing files when changin buffers
-vim.opt.hidden = true
+-- don't require writing files when changing buffers
+vim.cmd("set hidden")
 
 -- show find/replace preview in split window
 vim.opt.inccommand = split
@@ -41,6 +45,10 @@ vim.cmd("set nocompatible")
 vim.g.mapleader = " "
 vim.keymap.set('n', '<SPACE>', '<Nop>')
 
+--------------------------------------------------
+--                    PLUGINS                   -- 
+--------------------------------------------------
+
 -- initialize lazy plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -64,10 +72,18 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    event = { "BufReadPre", "BufNewFile" },
   },
 
   -- rainbow delimiters for treesitter
   "hiphish/rainbow-delimiters.nvim",
+
+  -- indent guide lines
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
+  },
 
   -- fast comment/uncomment
   {
@@ -104,9 +120,9 @@ require("lazy").setup({
   },
 
   -- auto match bracket/parenthesis/quote pairs
-  "jiangmiao/auto-pairs",
+  "tmsvg/pear-tree",
 
-  -- show colors inline
+  -- show css colors inline
   "ap/vim-css-color",
 
   -- display git add/remove/blame info next to line numbers
@@ -129,10 +145,52 @@ require("lazy").setup({
   },
 })
 
+--------------------------------------------------
+--                PLUGIN OPTIONS                --
+--------------------------------------------------
+
 -- set theme
 vim.opt.termguicolors = true
-vim.cmd([[colorscheme everforest]])
+vim.cmd([[ colorscheme everforest ]])
 vim.opt.background = "dark"
+
+-- add auto-closers for mult-character pairs
+vim.g.pear_tree_pairs = {
+  ['/*'] = { closer = '*/' },
+  ['<!--'] = { closer = '-->' },
+  ['('] = {closer = ')'},
+  ['['] = {closer = ']'},
+  ['{'] = {closer = '}'},
+  ["'"] = {closer = "'"},
+  ['"'] = {closer = '"'},
+}
+
+vim.g.pear_tree_smart_openers = 1
+vim.g.pear_tree_smart_closers = 1
+vim.g.pear_tree_smart_backspace = 1
+
+-- set rainbow delimiter colors
+require("rainbow-delimiters.setup").setup {
+  highlight = {
+    'RainbowDelimiterGreen',
+    'RainbowDelimiterBlue',
+    'RainbowDelimiterYellow',
+    'RainbowDelimiterOrange',
+    'RainbowDelimiterViolet',
+    'RainbowDelimiterCyan',
+    'RainbowDelimiterRed',
+  }
+}
+
+-- set indent guide lines to highlight scope
+require("ibl").setup()
+
+-- import treesitter config from ~/.config/nvim/lua/treesitter.lua
+require("treesitter")
+
+--------------------------------------------------
+--                   KEYBINDS                   --
+--------------------------------------------------
 
 -- open sidebar file tree with <space> e
 vim.keymap.set('n', '<Leader>e', '<cmd>NvimTreeToggle<cr>')
@@ -145,8 +203,11 @@ vim.keymap.set('n', '<Leader>bn', '<cmd>bnext<cr>')
 vim.keymap.set('n', '<Leader>bb', '<cmd>bprevious<cr>')
 vim.keymap.set('n', '<Leader>bc', '<cmd>bd<cr>')
 
--- vim.api.nvim_create_user_command('w!!', 'SudaWrite', {})
+-- bind write-as-sudo to :w!!
 vim.cmd("ca w!! :SudaWrite")
 
--- import treesitter config from ~/.config/nvim/lua/treesitter.lua
-require("treesitter")
+-- map ctrl-backspace to delete previous word
+vim.keymap.set('i', '<C-BS>', '<C-W>')
+
+-- map ctrl-delete to delete next word
+vim.keymap.set('i', '<C-Del>', '<C-o>dw')
