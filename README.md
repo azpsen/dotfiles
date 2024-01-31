@@ -2,6 +2,13 @@
 
 here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 
+<details>
+  <summary><b>📸 screenshots</b></summary>
+
+  ![desktop](pic/screenshots/desktop.png)
+  ![dev](pic/screenshots/dev.png)
+</details>
+
 ## programs
 ### 🏗️ system
 - distro: [arch linux](https://archlinux.org)
