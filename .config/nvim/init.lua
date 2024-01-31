@@ -53,62 +53,65 @@ vim.opt.rtp:prepend(lazypath)
 
 -- download plugins
 require("lazy").setup({
-    -- theme
-    "sainnhe/everforest",
+  -- theme
+  "sainnhe/everforest",
 
-    -- syntax highlighting, code features, etc.
-    {
-      "nvim-treesitter/nvim-treesitter",
-      build = ":TSUpdate",
+  -- syntax highlighting, code features, etc.
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+  },
+
+  -- rainbow delimiters for treesitter
+  "hiphish/rainbow-delimiters.nvim",
+
+  -- sidebar file tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
     },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  },
 
-    -- sidebar file tree
-    {
-      "nvim-tree/nvim-tree.lua",
-      version = "*",
-      lazy = false,
-      dependencies = {
-        "nvim-tree/nvim-web-devicons",
-      },
-      config = function()
-        require("nvim-tree").setup {}
-      end,
-    },
+  -- status line
+  {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("lualine").setup()
+    end,
+  },
 
-    -- status line
-    {
-      "nvim-lualine/lualine.nvim",
-      dependencies = { "nvim-tree/nvim-web-devicons" },
-      config = function()
-        require("lualine").setup()
-      end,
-    },
+  -- auto match bracket/parenthesis/quote pairs
+  "jiangmiao/auto-pairs",
 
-    -- auto match bracket/parenthesis/quote pairs
-    "jiangmiao/auto-pairs",
+  -- show colors inline
+  "ap/vim-css-color",
 
-    -- show colors inline
-    "ap/vim-css-color",
+  -- display git add/remove/blame info next to line numbers
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end,
+  },
 
-    -- display git add/remove/blame info next to line numbers
-    {
-      "lewis6991/gitsigns.nvim",
-      config = function()
-        require("gitsigns").setup()
-      end,
-    },
+  -- write/read file as sudo
+  "lambdalisue/suda.vim",
 
-    -- write/read file as sudo
-    "lambdalisue/suda.vim",
-
-    -- preveiw markdown in browser (:MarkdownPreview to activate)
-    {
-      'iamcco/markdown-preview.nvim',
-      config = function()
-        vim.fn["mkdp#util#install"]()
-      end,
-    },
-  })
+  -- preveiw markdown in browser (:MarkdownPreview to activate)
+  {
+    'iamcco/markdown-preview.nvim',
+    config = function()
+      vim.fn["mkdp#util#install"]()
+    end,
+  },
+})
 
 -- set theme
 vim.opt.termguicolors = true
