@@ -51,6 +51,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - [alternatives](https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md) - not a program, but a list of better programs
 - [maim](https://github.com/naelstrof/maim) - screenshots
 - [dua](https://github.com/Byron/dua-cli) - disk usage analyzer
+- [copyq](https://github.com/hluk/CopyQ) - clipboard manager
 
 ### 🎉 fun
 - [cava](https://github.com/karlstav/cava) - music visualizer
