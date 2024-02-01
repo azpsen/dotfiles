@@ -92,6 +92,10 @@ require("lazy").setup({
       toggler = {
         line = "<Leader>\\",
         block = "<Leader>|"
+      },
+      opleader = {
+        line = "\\",
+        block = "|",
       }
     },
     lazy = false,
