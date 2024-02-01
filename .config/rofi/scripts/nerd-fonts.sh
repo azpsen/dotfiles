@@ -44,6 +44,15 @@ function rofinf() {
     line=($line)
 }
 
+case $1 in
+--download)
+	download
+	;;
+--rofi)
+  rofinf
+	;;
+esac
+
 selection="$@"
 
 if [ -z "$selection" ]
@@ -57,13 +66,3 @@ else
     coproc $(echo "$selection" | cut -d" " -f2 | tr '\n' ' ' | sed 's/⠀//g; s/\s//g' | xclip -selection clipboard)
     exit 0
 fi
-
-
-case $1 in
---download)
-	download
-	;;
---rofi)
-  rofinf
-	;;
-esac

@@ -20,7 +20,7 @@ super + n
 
 # clipboard manager
 super + c
-	rofi -modi "clipboard:greenclip print,calc" -show clipboard -run-command '{cmd}' -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip -selection clipboard"
+	rofi -modi "clipboard:~/.config/rofi/scripts/copyq.py print,calc" -show clipboard -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip -selection clipboard"
 
 # power menu
 super + p
