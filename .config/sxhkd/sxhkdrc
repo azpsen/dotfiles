@@ -26,14 +26,12 @@ super + c
 super + p
 	rofi -show p -modi p:'~/.config/rofi/scripts/rofi-power-menu --symbols-font "JetBrainsMonoNL Nerd Font Mono"' -font "JetBrainsMonoNL Nerd Font Mono" -monitor -1
 
-# print screen - currently disabled clipboard due to issues with greenclip
+# print screen
 Print
-	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim "$path"
-  # && cat "$path" | xclip -selection clipboard -t image/png -i
+	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim "$path" && xclip -selection clipboard -t image/png -i "$path"
 
 shift + Print
-	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim -s "$path"
-  # && xclip -selection clipboard -t image/png "$path"
+	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim -s "$path" && xclip -selection clipboard -t image/png -i "$path"
 
 # make sxhkd reload its configuration files:
 super + Escape
