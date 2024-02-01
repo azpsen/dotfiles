@@ -22,6 +22,10 @@ super + n
 super + c
 	rofi -modi "clipboard:~/.config/rofi/scripts/copyq.py print,calc" -show clipboard -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip -selection clipboard"
 
+# calendar
+super + shift + c
+  ~/.config/rofi/scripts/calendar.sh
+
 # power menu
 super + p
 	rofi -show p -modi p:'~/.config/rofi/scripts/rofi-power-menu --symbols-font "JetBrainsMonoNL Nerd Font Mono"' -font "JetBrainsMonoNL Nerd Font Mono" -monitor -1
