@@ -49,6 +49,13 @@ export NNN_FCOLORS="AAAAE631BBBBCCCCDDDD9999" # feel free to change the colors
 export NNN_PLUG='p:preview-tui' # many other plugins are available here: https://github.com/jarun/nnn/tree/master/plugins
 export SPLIT='v' # to split Kitty vertically
 
+# -------- #
+# keybinds #
+# -------- #
+
+bind '"\C-H": backward-kill-word'
+bind '"\e[3;5~": kill-word'
+
 # ------- #
 # startup #
 # ------- #
