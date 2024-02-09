@@ -25,17 +25,29 @@ bspc rule -a Xarchiver state=floating
 bspc rule -a L3afpad state=floating
 bspc rule -a copyq state=floating
 
-# start screen locker
+# --------- #
+# autostart #
+# --------- #
+
+# screen locker
 xset s 600 5
 xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
 
+# tailscale systray icon
+pgrep -f tailscale-systray > /dev/null || tailscale-systray &
+
+# notifications manager
 pgrep -x dunst > /dev/null || dunst &
 
+# notify on song changes
 pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
+# polybar
 ~/.config/bspwm/scripts/launch-polybar.sh &
 
+# clipboard manager
 pgrep -x copyq > /dev/null || ~/.config/bspwm/scripts/copyq.sh &
 
+# compositor
 killall picom
 picom --no-fading-openclose &
