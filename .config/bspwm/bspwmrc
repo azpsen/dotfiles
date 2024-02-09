@@ -48,6 +48,9 @@ pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 # clipboard manager
 pgrep -x copyq > /dev/null || ~/.config/bspwm/scripts/copyq.sh &
 
+# polkit authentication agent
+pgrep -x lxsession > /dev/null || lxsession &
+
 # compositor
 killall picom
 picom --no-fading-openclose &
