@@ -24,6 +24,8 @@ bspc rule -a Thunar state=floating
 bspc rule -a Xarchiver state=floating
 bspc rule -a L3afpad state=floating
 bspc rule -a copyq state=floating
+bspc rule -a Xfce4-about state=floating
+bspc rule -a GParted state=floating
 
 # --------- #
 # autostart #
