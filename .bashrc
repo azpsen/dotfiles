@@ -56,6 +56,10 @@ export SPLIT='v' # to split Kitty vertically
 bind '"\C-H": backward-kill-word'
 bind '"\e[3;5~": kill-word'
 
+# fzf shortcuts
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+
 # ------- #
 # startup #
 # ------- #
