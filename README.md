@@ -36,6 +36,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - prompt: [starship](https://starship.rs)
 - fetch: [pfetch](https://github.com/dylanaraps/pfetch)
 - monitor: [bottom](https://github.com/ClementTsang/bottom) and/or [btop](https://github.com/aristocratos/btop)
+- [fzf](https://github.com/junegunn/fzf) - multi-purpose finder
 - [glow](https://github.com/charmbracelet/glow) - markdown preview
 
 ### 🚀 development
