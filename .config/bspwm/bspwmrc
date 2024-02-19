@@ -26,6 +26,7 @@ bspc rule -a L3afpad state=floating
 bspc rule -a copyq state=floating
 bspc rule -a Xfce4-about state=floating
 bspc rule -a GParted state=floating
+bspc rule -a Caffeine state=floating
 
 # --------- #
 # autostart #
@@ -49,6 +50,9 @@ pgrep -x notify.sh > /dev/null || ~/.config/bspwm/scripts/notify.sh &
 
 # clipboard manager
 pgrep -x copyq > /dev/null || ~/.config/bspwm/scripts/copyq.sh &
+
+# caffeine
+pgrep -x caffeine > /dev/null || caffeine &
 
 # polkit authentication agent
 pgrep -x lxsession > /dev/null || lxsession &
