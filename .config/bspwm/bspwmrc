@@ -28,6 +28,13 @@ bspc rule -a Xfce4-about state=floating
 bspc rule -a GParted state=floating
 bspc rule -a Caffeine state=floating
 
+# ----------- #
+# environment #
+# ----------- #
+
+# set qt to use gtk theme
+export QT_QPA_PLATFORMTHEME=gtk2
+
 # --------- #
 # autostart #
 # --------- #

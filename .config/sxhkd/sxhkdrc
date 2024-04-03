@@ -93,6 +93,10 @@ super + {p,b}
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
+# focus the next/previous desktop in the current monitor (same as windows hotkeys)
+super + ctrl + {Left,Right}
+  bspc desktop -f {prev,next}.local
+
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
