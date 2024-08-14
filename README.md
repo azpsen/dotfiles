@@ -53,6 +53,7 @@ here are the dotfiles and some of the programs i use for my bspwm setup. wip.
 - [maim](https://github.com/naelstrof/maim) - screenshots
 - [dua](https://github.com/Byron/dua-cli) - disk usage analyzer
 - [copyq](https://github.com/hluk/CopyQ) - clipboard manager
+- [surfingkeys](https://github.com/brookhong/surfingkeys) for firefox with [this](https://github.com/b0o/surfingkeys-conf) config
 
 ### 🎉 fun
 - [cava](https://github.com/karlstav/cava) - music visualizer
