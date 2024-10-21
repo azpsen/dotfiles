@@ -30,6 +30,10 @@ super + shift + c
 super + p
 	rofi -show p -modi p:'~/.config/rofi/scripts/rofi-power-menu --symbols-font "JetBrainsMonoNL Nerd Font Mono"' -font "JetBrainsMonoNL Nerd Font Mono" -monitor -1
 
+# password manager
+super + shift + p
+  rofi-rbw
+
 # print screen
 Print
 	path="$HOME/pic/screenshots/$(date +"%s - %Y-%m-%d").png" && maim "$path" && xclip -selection clipboard -t image/png -i "$path"
