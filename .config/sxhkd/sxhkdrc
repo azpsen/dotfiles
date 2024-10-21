@@ -32,7 +32,7 @@ super + p
 
 # password manager
 super + shift + p
-  rofi-rbw
+  rofi-rbw --prompt '  pw ' --selector-args '-font "JetBrainsMonoNL Nerd Font Mono" -monitor -1'
 
 # print screen
 Print
